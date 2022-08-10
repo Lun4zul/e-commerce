@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/agregar_producto.css">
+        <link rel="stylesheet" href="./css/footer.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" type="imagex/png" href="./assets/img/Logo.svg" width="16" height="16">
+        <title>AluraGeek</title>
+    </head>
+
+    <body>
+        <header>
+            <section class="navbar">
+                <nav class="navbar__nav container">
+                    <a class="navbar__logo-box" href="./index.html">
+                        <img class="navbar__logo-img" src="./assets/img/logo.PNG" alt="logo alura">
+                    </a>
+                    <div class="navbar__search-box">
+                        <input type="search" class="navbar__search-input" placeholder="¿Qué deseas buscar?">
+                        <i class="fa-solid fa-magnifying-glass navbar__search-icon"></i>
+                    </div>
+                    <div class="navbar__cart-login-box">
+                        <a class="navbar__button" href="./login.html">Menú Administrador <i class="fa-solid fa-user"></i></a>
+                    </div>
+                </nav>
+            </section>
+    
+            
+        </header>
+
+        <main>
+            <section class="formulario">
+                <form class="formulario__form" action="" novalidate>
+                    <h3>Agregar Nuevo Producto</h3>
+                    
+                    <div class="input__label">
+                        <label class="input__label-label" for="">URL de la Imagen:</label>
+                        <input class="input__label-input" placeholder="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAA.png" 
+                        type="text" name="urlImagenProducto" required>
+                        <p class="text-error" id="error-categoria"></p>
+                    </div>
+                    <div class="input__label">
+                        <label class="input__label-label" for="">Categoria:</label>
+                        <input class="input__label-input" placeholder="Consolas" type="text" name="categoriaProducto" required>
+                        <p class="text-error" id="error-categoria"></p>
+                    </div>
+                    <div class="input__label">
+                        <label class="input__label-label" for="">Nombre del producto:</label>
+                        <input class="input__label-input" placeholder="Producto XYZ" type="text" required maxlength="20" name="nombreProducto">
+                        <p class="text-error" id="error-nombreProducto"></p>
+        
+                    </div>
+                    <div class="input__label">
+                        <label class="input__label-label" for="">Precio del producto:</label>
+                        <input class="input__label-input" placeholder="$60.00" type="number" required name="precioProducto">
+                        <p class="text-error" id="error-precio"></p>
+                    </div>
+                    <div class="input__label">
+                        <label class="input__label-label" for="">Descripción del producto:</label>
+                        <textarea class="input__label-area" class="footer__form-mensaje"  name="descripcionProducto" required maxlength="150"></textarea>
+                        <p class="text-error" id="error-descripcion"></p>
+                    </div>
+        
+                    <input class="input-btn" type="submit" value="Agregar Producto">
+        
+                </form>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__logo-info">
+                <img src="./assets/img/logo.PNG" alt="">
+                <ul class="info__listas">
+                    <li><a class="info__link" href="">Quienes somos</a></li>
+                    <li><a class="info__link"  href="">Politica de privacidad</a></li>
+                    <li><a class="info__link"  href="">Programa de fidelidad</a></li>
+                    <li><a class="info__link"  href="">Nuestras Tiendas</a></li>
+                    <li><a class="info__link"  href="">Quiero ser franquiciado</a></li>
+                    <li><a class="info__link"  href="">Anuncie aqui</a></li>
+                </ul>
+            </div>
+            <form class="footer__form" action="">
+                <h3 class="footer__titulo">Hable con nosotros</h3>
+                <input class="footer__input" type="text" name="name" placeholder="Nombre" autocomplete="off" >
+                <textarea class="footer__input" type="text" placeholder="Escribe tu mensaje" rows="5" autocomplete="off" ></textarea>
+                <input class="footer__boton" type="submit">
+            </form>
+        </footer>
+        <div class="rodapie">
+            <p>Desarrollado por Andrea Hernández</p>
+            <p>&copy; 2022</p>  
+        </div>
+    </body>

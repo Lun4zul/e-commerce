@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/login.css">
+        <link rel="stylesheet" href="./css/footer.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" type="imagex/png" href="./assets/img/Logo.svg" width="16" height="16">
+        <title>Iniciar Sesión</title>
+    </head>
+
+    <body>
+        <header>
+            <section class="navbar">
+                <nav class="navbar__nav container">
+                    <a class="navbar__logo-box" href="./index.html">
+                        <img class="navbar__logo-img" src="./assets/img/logo.PNG" alt="logo alura">
+                    </a>
+                    <div class="navbar__search-box">
+                        <input type="search" class="navbar__search-input" placeholder="¿Qué deseas buscar?">
+                        <i class="fa-solid fa-magnifying-glass navbar__search-icon"></i>
+                    </div>
+                    <div class="navbar__cart-login-box">
+                        <a class="navbar__button" href="./index.html">Volver <i class="fa-solid fa-user"></i></a>
+                    </div>
+                </nav>
+            </section>
+    
+           
+        </header>
+
+        <main>
+            <section class="login">
+                <form class="login__contenedor">
+                    <h2 class="login__iniciar">Iniciar Sesión</h2>
+                    <div class="login__nombre">
+                        <label class="contacto__tipo" for="nombre">E-mail:</label>
+                        <input class="contacto__nombre" placeholder="Escriba su correo electrónico" type="email"  autocomplete="off" id="nombre" required pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$">
+                    </div>
+                    <div class="login__opinion">
+                        <label class="contacto__tipo" for="contraseña">Contraseña</label>
+                        <input class="contacto__nombre"  placeholder="Escriba su contraseña" type="password" id="contraseña" required>
+                    </div>
+                    <td colspan="2"><input type="button" class="Entrar" name="btnVerifivaca" id="btnVerifica" onclick="validar()" value="ENTRAR" style = "width: 100%"> </td>
+                    <p class="login-message-error">*El email y/o la contraseña es incorrecto/a</p>
+                </form>
+            </section>
+            
+        </main>
+        <footer class="footer">
+            <div class="footer__logo-info">
+                <img src="./assets/img/logo.PNG" alt="">
+                <ul class="info__listas">
+                    <li><a class="info__link" href="">Quienes somos</a></li>
+                    <li><a class="info__link"  href="">Politica de privacidad</a></li>
+                    <li><a class="info__link"  href="">Programa de fidelidad</a></li>
+                    <li><a class="info__link"  href="">Nuestras Tiendas</a></li>
+                    <li><a class="info__link"  href="">Quiero ser franquiciado</a></li>
+                    <li><a class="info__link"  href="">Anuncie aqui</a></li>
+                </ul>
+            </div>
+            <form class="footer__form" action="">
+                <h3 class="footer__titulo">Hable con nosotros</h3>
+                <input class="footer__input" type="text" name="name" placeholder="Nombre" autocomplete="off" >
+                <textarea class="footer__input" type="text" placeholder="Escribe tu mensaje" rows="5" autocomplete="off" ></textarea>
+                <input class="footer__boton" type="submit">
+            </form>
+        </footer>
+        <script src="./servicios/login.js"></script>
+        <div class="rodapie">
+            <p>Desarrollado por Andrea Hernández</p>
+            <p>&copy; 2022</p>  
+        </div>
+    </body>
