@@ -1,0 +1,88 @@
+main{
+    background: var(--color-grey);
+}
+.cabecera__logo{
+    width: 100%;
+    justify-content: space-around;
+}
+.login{
+    display: flex;
+    justify-content: center;
+    padding: 70px 0;
+}
+
+.contacto__nombre{
+    border: none;
+    margin-top: 20px;
+}
+.login__contenedor{
+    display: flex;
+    flex-direction: column;
+}
+
+.login__iniciar{
+    font-weight: 700;
+    font-size: 2.2rem;
+    font-style: normal;
+    text-align: center;
+    
+}
+.Entrar{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 5px;
+    background: var(--color-blue);
+    border: none;
+    padding: .7rem 0;
+    color: white;
+    cursor: pointer;
+}
+
+.Entrar:hover{
+    background: var(--color-dark-blue);
+    transition: .3s;
+}
+
+.login-message-error{
+    margin-top: 1rem;
+    color: var(--color-red);
+    opacity: 0;
+}
+
+.login__nombre, .login__opinion{
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0 15px 0;
+    width: 400px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    border-bottom: black solid;
+    padding: 8px;
+
+}
+
+
+.login-message-error{
+    margin-top: 1rem;
+    color: var(--color-red);
+    opacity: 0;
+}
+
+.invalid-login{
+    opacity: 1;
+}
+
+@media screen and ( max-width: 450px) {
+    .login__contenedor{
+        width: 80%;
+    }
+    .login__nombre, .login__opinion{
+        width: auto;
+    }
+}
+
+
+
+
+

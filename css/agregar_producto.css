@@ -1,0 +1,137 @@
+.formulario{
+    display: flex;
+    padding: 3rem 0 3rem 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--background-blanco);
+}
+.formulario__form{
+
+    width: 30%;
+}
+.formulario__form h3{
+    font-size: 1.5rem;
+}
+
+.input__label{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    background: var(--background-blanco);
+    padding: .5rem;
+    border-bottom: solid 1px var(--background-negro);
+}
+.input__label-label{
+    color:var(--background-negro);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    
+}
+
+.input__label-input{
+    font-size: .9rem;
+    border: none;
+    font-family: Raleway;
+    
+    
+
+}
+
+.input__label-area{
+    margin-top: 2rem;
+    outline: none;
+    border: 5;
+    font-size: 1.2rem;
+    font-family: Raleway;
+    padding: 1rem;
+    height: 8rem;
+    resize: none;
+
+}
+
+.input__label-btn{
+    margin-top: 1rem;
+    width: 30%;
+    background: #2A7AE4;
+    border: 0;
+    color: #FFFFFF;
+    padding: 2rem 1rem 2rem 1rem;
+    font-size: 1.5rem;
+}
+.input__label-btn:hover{
+    background: #FFFFFF;
+    border: solid 1px #2A7AE4;
+    padding: 2rem 1rem 2rem 1rem;
+    color: #2A7AE4;
+}
+
+.input-btn{
+    background: #2A7AE4;
+    border: 0;
+    width: 100%;
+    padding: 2rem 1rem 2rem 1rem;
+    color: #FFFFFF;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+.input-btn:hover{
+    background: #FFFFFF;
+    border: solid 1px #2A7AE4;
+    width: 100%;
+    padding: 2rem 1rem 2rem 1rem;
+    color: #2A7AE4;
+}
+
+.input__image{
+    background: #FFFFFF;
+    height: 20rem;
+    border: dashed #C8C8C8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+
+}
+
+
+@media screen and (max-width: 1200px) {
+    /* formulario */
+    .formulario__form{
+        width: 60%;
+    }
+
+}
+/* movil */
+@media screen and (max-width: 500px) {
+
+    /* inputs */
+
+    .input__label-btn {
+        width: 50%;
+    }
+
+    .all {
+        flex-direction: column;
+
+        align-items: start;
+    }
+
+    .error__busqueda{
+        width: 90%;
+
+
+    }
+    .error__img{
+        width: 90%;
+    }
+
+    
+    /* formulario */
+    .formulario__form{
+        width: 90%;
+    }
+    
+
+}
